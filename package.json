@@ -12,6 +12,10 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
+  "rules": {
+    "linebrak-style": 0,
+    "global-require": 0
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
