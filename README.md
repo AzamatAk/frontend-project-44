@@ -7,9 +7,11 @@
 
 **Min specs:**
 
-Intel Core I9 12th gen. or better/Ryzen 9 or better
-32Gb RAM
-Nvidia RTX 4090 or better
+-Intel Core I9 12th gen. or better/Ryzen 9 or better
+
+-32Gb RAM
+
+-Nvidia RTX 4090 or better
 
 Just kidding!)
 
