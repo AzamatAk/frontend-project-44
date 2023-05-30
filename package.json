@@ -3,7 +3,6 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Brain Games is a set of five console games.",
-  "main": "brain-games.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -12,32 +11,25 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "rules": {
-    "linebrak-style": 0,
-    "linebreak-style": [0 ,"error", "windows"], 
-    "global-require": 0
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexVXA/frontend-project-44.git"
+    "url": "git+https://github.com/AzamatAk/frontend-project-44"
   },
-  "author": "AlexVXA",
+  "author": "AzamatAk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexVXA/frontend-project-44/issues"
+    "url": "https://github.com/AzamatAk/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/AlexVXA/frontend-project-44#readme",
+  "homepage": "https://github.com/AzamatAk/frontend-project-44#readme",
   "dependencies": {
-    "jest": "^29.4.3",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.2.1"
+    "eslint-plugin-import": "^2.26.0"
   }
 }
