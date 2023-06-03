@@ -1,4 +1,4 @@
-import getRandomNumber from '../helpers/getRandom.js';
+import { getRandomNumber, getRandomFromRangeOf } from '../helpers/getRandom.js';
 import startGame from '../index.js';
 
 const minProgLength = 5;
@@ -18,10 +18,10 @@ const getProgression = (length, step) => {
 };
 
 const getRound = () => {
-  const progressionLength = getRandomNumber(minProgLength, maxProgLength);
-  const progressionStep = getRandomNumber(minProgStep, maxProgStep);
+  const progressionLength = getRandomFromRangeOf(minProgLength, maxProgLength);
+  const progressionStep = getRandomFromRangeOf(minProgStep, maxProgStep);
   const progression = getProgression(progressionLength, progressionStep);
-  const hiddenValueIndex = getRandomNumber(0, progression.length - 1);
+  const hiddenValueIndex = getRandomFromRangeOf(0, progression.length - 1);
   const correctAnswer = progression[hiddenValueIndex].toString();
   progression[hiddenValueIndex] = '..';
   const question = progression.join(' ');
