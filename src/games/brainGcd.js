@@ -1,4 +1,4 @@
-import getRandomNumber from '../helpers/getRandom.js';
+import getRandomNumber from '../helpers/getRandomNumber.js';
 import startGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -9,11 +9,11 @@ const getGCD = (x, y) => {
 };
 
 const getRound = () => {
-  const firstValue = getRandomNumber(0, Math.random() * 100);
-  const secondValue = getRandomNumber(0, Math.random() * 100);
+  const firstValue = getRandomNumber(0, 100);
+  const secondValue = getRandomNumber(0, 100);
   const question = `${firstValue} ${secondValue}`;
-  const correctAnswer = getGCD(firstValue, secondValue).toString();
-  return [question, correctAnswer];
+  const answer = getGCD(firstValue, secondValue).toString();
+  return [question, answer];
 };
 
 export default () => startGame(getRound, description);
